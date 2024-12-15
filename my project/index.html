@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+    <nav class="flex md:top-0 md:sticky">
+        <div class="flex flex-col md:flex-row md:space-x-80  justify-center m-3">
+            <h1 class="font-bold text-white text-4xl  flex justify-center md:justify-start m-2 md:ml-5 underline">
+                Portfolio</h1>
+            <ul class="text-white flex space-x-8 flex-col m-4 md:flex-row md:justify-end max-[600px]:hidden ">
+                <li class="ml-8 hover:underline hover:text-yellow-500"><a href="#home">HOME</a></li>
+                <li class="hover:underline hover:text-yellow-500"><a href="#About">ABOUT</a></li>
+                <li class="hover:underline hover:text-yellow-500"><a href="#Projects">PROJECTS</a></li>
+                <li class="hover:underline hover:text-yellow-500"><a href="#Skills">SKILLS</a></li>
+                <li class="hover:underline hover:text-yellow-500"><a href="#CERTIFICATES">CERTIFICATES</a></li>
+                <li class="hover:underline hover:text-yellow-500"><a href="#Contacts">CONTACTS</a></li>
+            </ul>
+
+            <button type="button" class="md:hidden absolute top-8 right-10" onclick="navbar()"><i class="fa-solid fa-bars text-white " id="bar"></i></button>
+            <a href="/"><button type="button" class="md:hidden absolute top-8 right-10 hidden" id="close" onclick="close()"><i class="fa-solid fa-x text-white" ></i></i></button></a>
+
+          
+        </div>
+    </nav>
+    <div class="hidden justify-center items-center my-4" id="mobile">
+        <ul class="text-white flex flex-col justify-center items-center ">
+            <li class="hover:underline hover:text-yellow-500"><a href="#home">HOME</a></li>
+            <li class="hover:underline hover:text-yellow-500"><a href="#About">ABOUT</a></li>
+            <li class="hover:underline hover:text-yellow-500"><a href="#Projects">PROJECTS</a></li>
+            <li class="hover:underline hover:text-yellow-500"><a href="#Skills">SKILLS</a></li>
+            <li class="hover:underline hover:text-yellow-500"><a href="#CERTIFICATES">CERTIFICATES</a></li>
+            <li class="hover:underline hover:text-yellow-500"><a href="#Contacts">CONTACTS</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Scetion -->
+    <div id="home" class="md:flex-col md:flex md:justify-center md:items-center">
+        <div class="flex flex-col md:flex-row md:mt-16  md:justify-center md:items-center">
+            <div class="flex justify-center m-2 md:justify-start  md:mt-36  ">
+                <div>
+                    <img class="hover:scale-105 duration-300 bg-[#37373a;] w-32 rounded-lg" src="./image/my-avatar.png"
+                        alt="">
+                    <h1 class="text-2xl text-white font-bold flex justify-center items-center mt-3 -ml-4">Somanath Patil
+                    </h1>
+                    <p
+                        class="text-white font-extralight text-sm w-32 bg-[#37373a;] mt-3 flex items-center justify-center rounded-xl p-1">
+                        Web Developer</p>
+                </div>
+            </div>
+            <div>
+                <div
+                    class="flex flex-col items-center justify-center p-2 mt-5 md:mt-28 md:ml-7 md:flex-row hover:scale-105 duration-300">
+                    <i class="fa-solid fa-envelope fa-flip-horizontal fa-2xl mr-5" style="color: #f5c30f;"></i>
+                    <ul class="text-white m-2 ">
+                        <li class="font-light opacity-70 hidden md:block">
+                            Email
+                        </li>
+                        <li class="font-extralight md:font-bold  mt-2 ">
+                            patilsomanath292@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center p-2 mt-5 md:mt-14 md:ml-7  md:flex-row md:mr-7 md:justify-start hover:scale-105 duration-300">
+                    <i class="fa-solid fa-mobile-button fa-2xl mr-5 mb-3 md:-mb-1" style="color: #f2b202;"></i>
+                    <ul class="text-white m-2">
+                        <li class="font-light opacity-70 hidden md:block">
+                            Phone
+                        </li>
+                        <li class="font-extralight md:font-bold mr-4 ">
+                            +91-7795091855
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div
+                    class="flex flex-col md:flex-row items-center justify-center p-2 mt-5 md:mt-28 md:ml-7 md:justify-start hover:scale-105 duration-300">
+                    <i class="fa-solid fa-calendar-days fa-2xl mr-5" style="color: #f5c000;"></i>
+                    <ul class="text-white m-2">
+                        <li class="font-light opacity-70 hidden md:block">
+                            Birthday
+                        </li>
+                        <li class="md:font-bold font-extralight mr-3 mt-3 md:-mt-0 ">
+                            February 18,2004
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="flex flex-col  md:flex-row items-center justify-center p-2 mt-5 md:mt-14 md:ml-7 md:justify-center hover:scale-105 duration-300">
+                    <i class="fa-solid fa-location-dot fa-2xl mr-5" style="color: #fbc604;"></i>
+                    <ul class="text-white m-2">
+                        <li class="font-light opacity-70 hidden md:block">
+                            Location
+                        </li>
+                        <li class="md:font-bold font-extralight mt-3 ">
+                            Kolhapur,Maharashtra,India
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block mt-6 md:mb-28">
+            <div class="flex space-x-16 ml-20 ">
+                <div class="hover:scale-105 duration-700 transition-transform">
+                    <a href="https://www.instagram.com/somupatil._/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #e4e5e7;"></i></a>
+                </div>
+                <div class="hover:scale-105 duration-700 transition-transform">
+                    <a href="https://github.com/Somanathpatil" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #dfe0e2;"></i></a>
+                </div>
+                <div class="hover:scale-105 duration-700 transition-transform">
+                    <a href="https://www.linkedin.com/in/somanath-patil-82433a285/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #d9dbde;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About scetion -->
+    <div id="About" class="flex flex-col justify-center  mt-24 md:mt-48 md:w-[100%] ">
+        <h1
+            class="flex  font-bold text-3xl text-yellow-600 underline justify-center md:ml-6 md:mt-32 md:justify-start md:m-4">
+            About</h1>
+        <div class="md:flex md:mt-24">
+            <div class="img md:w-[35%]">
+                <img class="p-3 md:w-64 md:-mt-20 md:ml-14 flex md:justify-center items-center" src="./image/Somu1.png"
+                    alt="">
+            </div>
+            <div class="info flex md:w-[70%] justify-center items-center ">
+                <div class="p-5">
+                    <h1 class="text-white text-4xl font-bold m-3 italic"> I'am Somanath</h1>
+                    <p class="text-white">I am a SOMANATH APPASAB PATIL from Shedbal, Karnataka. I am persuing my
+                        Bachelor of Technology in Computer Science and Engineering since 2022 in SANJAY GHODAWAT
+                        UNIVERSITY,Kolhapur, MAHARASTHRA. I am Developer who loves to learn programming languages & also
+                        designing part. My hobbies include playing games like Cricket, Badminton. I am passionate about
+                        Sketching things which are not related to technology and that's my hobby too. I am looking
+                        forward to improve myself day-by-day with the help of this platform.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-white flex justify-center md:justify-center md:mr-36 md:mt-9 md:mb-24">
+            <a class="bg-[#37373a;] p-2 font-bold text-yellow-600 rounded-2xl" href="https://drive.google.com/file/d/1zEOMfVm7ypyR0_HELaPwYusmJEczf30r/view?usp=sharing"><button>My Resume</button></a>
+        </div>
+    </div>
+
+    <!-- Project Section -->
+    <div id="Projects" class="md:mt-80 md:mb-52 overflow-hidden">
+        <div class="md:mb-24">
+
+            <h1
+                class="flex mt-9 font-bold text-3xl text-yellow-600 underline justify-center md:ml-6  md:mt-40 md:mb-20 md:justify-start md:m-4">
+                Projects</h1>
+            <div class="left ">
+                <div class="m-2 mt-10 flex flex-col md:flex-row  justify-center items-center md:w-[100%] ">
+                    <div class="flex md:w-[50%] md:m-2">
+                        <div class=" md:flex md:flex-col md:items-center md:justify-center md:m-2">
+                            <img class="rounded-xl w-52  md:w-32 " src="./image/atm.jpg" alt="">
+                            <p
+                                class="text-white  md:w-32 md:font-normal  text-sm justify-center flex font-bold border-2 rounded-2xl p-0 mt-2">
+                                ATM Management</p>
+                        </div>
+                        <div class="hidden md:block  ">
+                            <p class="text-white text-sm md:mt-7 font-thin md:justify-center md:items-center ">An ATM
+                                Management System is a software application designed to oversee and manage the operation
+                                of
+                                Automated Teller Machines (ATMs). It ensures secure, efficient, and reliable
+                                transactions
+                                like cash withdrawals, deposits, balance inquiries, and fund transfers. </p>
+                        </div>
+                    </div>
+
+                    <div class="flex md:w-[50%] md:m-3">
+                        <div class=" md:flex md:flex-col md:items-center mt-3 md:justify-center md:m-2">
+                            <img class="rounded-xl w-52  md:w-32 " src="./image/attend.webp" alt="">
+                            <p
+                                class="text-white  md:font-normal md:w-32  md:justify-center md:items-center text-sm justify-center flex font-bold border-2 rounded-2xl p-0 md:pl-5 mt-2">
+                                Attendense Management</p>
+                        </div>
+                        <div class="hidden md:block  ">
+                            <p class="text-white md:mt-4 text-sm font-thin">An Attendance Management System is a digital
+                                solution to
+                                track and manage employee or student attendance efficiently. It automates tasks like
+                                marking
+                                attendance, generating reports, and monitoring absenteeism, reducing manual errors and
+                                saving time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <div class="left  ">
+                    <div class="m-2 mt-10 flex flex-col md:flex-row  justify-center items-center md:w-[100%] ">
+                        <div class="flex md:w-[50%] md:m-2">
+                            <div class=" md:flex md:flex-col md:items-center md:justify-center md:m-2">
+                                <img class="rounded-xl w-52  md:w-32 " src="./image/images.png" alt="">
+                                <p
+                                    class="text-white  md:w-32 md:font-normal  text-sm justify-center flex font-bold border-2 rounded-2xl p-0 mt-2">
+                                    Ticket Management</p>
+                            </div>
+                            <div class="hidden md:block  ">
+                                <p class="text-white text-sm md:mt-7 font-thin md:justify-center md:items-center ">A
+                                    Ticket
+                                    Management System is a tool used to organize, track, and manage customer or internal
+                                    requests in an efficient way. It allows users to create, assign, prioritize, and
+                                    resolve
+                                    tickets while maintaining clear communication and documentation </p>
+                            </div>
+                        </div>
+
+                        <div class="flex md:w-[50%] md:m-3">
+                            <div class=" md:flex md:flex-col md:items-center mt-3 md:justify-center md:m-2">
+                                <img class="rounded-xl w-52  md:w-32 " src="./image/port.jpg" alt="">
+                                <p
+                                    class="text-white  md:font-normal md:w-32  md:justify-center md:items-center text-sm justify-center flex font-bold border-2 rounded-2xl p-0 md:pl-5 mt-2">
+                                    Portfolio</p>
+                            </div>
+                            <div class="hidden md:block   ">
+                                <p class="text-white text-sm  md:mt-5  font-thin">
+                                    "Welcome to my portfolio! I am Somanath Patil, a passionate Web development with
+                                    expertise in front-End. Explore my projects, achievements, and experiences that
+                                    reflect
+                                    my creativity and dedication to excellence."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div id="Skills" class="md:flex">
+
+        <div class=" md:w-[100%]">
+
+            <h1
+                class="flex mt-20 font-bold text-3xl text-yellow-600 underline justify-center md:ml-6 md:mt-32 md:justify-start md:m-4">
+                Skills </h1>
+            <div class="flex flex-col-reverse md:flex-row md:-mt-32 md:mb-32">
+                <div class=" min-h-screen flex justify-center items-center md:w-[50%]">
+                    <div class="w-full max-w-md bg-black shadow-md rounded-lg p-6">
+                        <h2 class="text-2xl font-bold mb-4 text-white underline">My Skills</h2>
+                        <!-- Skill 1 -->
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">C</span>
+                                <span class="text-sm text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">C++</span>
+                                <span class="text-sm text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 3 -->
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">HTML</span>
+                                <span class="text-sm text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">CSS</span>
+                                <span class="text-sm text-gray-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-green-500 h-2.5 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 5 -->
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">Java</span>
+                                <span class="text-sm text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 6 -->
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">JavaScript</span>
+                                <span class="text-sm text-gray-600">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 7 -->
+                        <div class="mb-2">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-white">Tailwind CSS</span>
+                                <span class="text-sm text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center md:mb-40">
+                    <img class="flex mt-24 " src="./image/skill.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATES -->
+    <div id="CERTIFICATES" class="md:p-3">
+        <h1
+            class="flex  font-bold -mt-12 text-3xl text-yellow-600 underline justify-center md:justify-start md:ml-6 md:mt-20  items-start md:m-4">
+            Certificates </h1>
+        <div class="md:flex md:justify-center md:space-x-64 md:mt-24">
+            <div class="flex flex-col justify-center items-center mt-9">
+                <img class="w-52 rounded-lg" src="./image/c1.jpg" alt="">
+                <p class="text-white font-bold font-mono">Webverse</p>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-9">
+                <img class="w-52 rounded-lg" src="./image/c2.jpg" alt="">
+                <p class="text-white font-bold font-mono">Git & GitHub</p>
+            </div>
+        </div>
+
+        <div class="md:flex md:justify-center md:mt-5 md:space-x-64 md:mb-24">
+            <div class="flex flex-col justify-center items-center mt-9">
+                <img class="w-52 rounded-lg" src="./image/c3.jpg" alt="">
+                <p class="text-white font-bold font-mono">Placement Participation</p>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-9">
+                <img class="w-52 rounded-lg" src="./image/c4.jpg" alt="">
+                <p class="text-white font-bold font-mono">Generative AI</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts -->
+    <div id="Contacts" class=" md:mb-48 md:mt-28 flex justify-center items-center mt-12 flex-col">
+            <h1 class="flex  font-bold  mt-4 text-3xl text-yellow-600 underline justify-center md:justify-start md:ml-6 md:mt-20  items-start md:m-4">
+                Contacts </h1>
+        <div class="feedback mt-16  flex flex-col justify-center items-center">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f3785161-0007-4c35-b948-b93c8c6e3931">
+                <input
+                    class="info bg-black border-2 p-3 rounded-xl m-3 md:w-80 w-full hover:scale-105 transition-transform duration-300 text-white"
+                    type="text" name="fname" id="name" placeholder="Enter Your Name" /><br>
+                <input
+                    class="info  bg-black border-2 p-3 rounded-xl m-3 md:w-80 w-full hover:scale-105 transition-transform duration-300 text-white"
+                    type="email" name="email" id="email" placeholder="Enter Your Email" /><br>
+                <textarea
+                    class="info  bg-black border-2 p-3 rounded-xl m-3 md:w-80 w-full hover:scale-105 transition-transform duration-300 text-white"
+                    name="Message" id="Message" cols="30" rows="4" placeholder="Enter Your Message"></textarea><br>
+                <div
+                    class="s-button bg-yellow-600 flex items-center justify-center p-3 font-bold text-xl rounded-2xl hover:scale-105 transition-transform duration-300  ">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="text-white bg-[#37373a;] mt-9 flex justify-center items-center p-1 bottom-0">
+        <h1>Copyright © patilsomanath292@gmail.com</h1>
+    </div>
+</body>
+<script>
+    function navbar(){
+
+        let mobile = document.querySelector('#mobile');
+        let close = document.querySelector('#close');
+        let bar = document.querySelector('#bar').style.display='none'
+        mobile.style.display='flex'
+        close.style.display='block'
+
+
+    }
+
+    function close(){
+
+        let mobile = document.querySelector('#mobile');
+        let close = document.querySelector('#close');
+        let bar = document.querySelector('#bar').style.display='block'
+        mobile.style.display='none'
+        close.style.display='none'
+
+
+    }
+</script>
+</html>
